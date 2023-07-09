@@ -1,0 +1,29 @@
+import java.util.*;public class Main
+{
+	public static void main(String[] args)
+	{
+		bill n=new bill();
+		n.bill();
+	}
+}
+class bill{
+	void bill()
+	{
+		System.out.println("enter no unit used");
+		Scanner in=new Scanner(System.in);
+		double k=in.nextDouble();
+		if(k<=100){
+			System.out.println("your bill is"+k*1.2);
+			
+		}
+		else if(k>100 &k<200){
+			System.out.println("your bill is"+(100*1.2)+((k-100)*3));
+		}
+		else if(k>200 &k<300){
+			System.out.println("your bill is"+((100*1.2)+(200*3)+((k-200)*4)));
+		}
+		else
+			System.out.println("invalid entery try again");
+		
+	}
+}
